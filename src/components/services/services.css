@@ -1,0 +1,114 @@
+.services{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sSection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sTitle{
+    font-size: 88px;
+    margin-bottom: 24px;
+}
+.serviceList{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sItems{
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(51, 49, 51);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+.sIcon{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sIcon img{
+    width: 25px;
+    height: 25px;
+}
+.sInfo h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.sInfo h3{
+    font-size: 13px;
+    font-weight: 300;
+}
+.sItems:nth-child(1) .sIcon{
+    background-color: rgb(228, 47, 228);
+}
+.sItems:nth-child(2) .sIcon{
+    background-color: rgb(66, 241, 110);
+}
+.sItems:nth-child(3) .sIcon{
+    background-color: rgb(165, 147, 48);
+}
+.counterList{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.counter h1{
+font-size: 48px;
+color: rgb(240, 96, 120);
+}
+.counter p{
+    font-size: 13px;
+}
+@media (max-width:1536px){
+    .sItems, .counterList{
+        width: 80%;  
+    }  
+}
+@media (max-width:1280px){
+    .sTitle{
+        font-size: 128px;
+    }
+    .sItems{
+        width: 100%;
+    }
+}
+@media (max-width:1024px){
+    .sTitle{
+        font-size: 50px;
+    }
+    .sItems, .counterList{
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .services{
+        align-items: center;
+        justify-content: center;
+    }
+    .sSection{
+        width: 100%;
+    }
+    .sSection.right{
+        display: none;
+    }
+}
